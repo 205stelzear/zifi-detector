@@ -1,17 +1,16 @@
-name: CI - Client
+name: CI
 
 on:
   push:
-    paths:
-      - '**'
-      - '.github/workflows/main-client.yml'
-      - '!.github/**'
-      - '!.vscode/**'
-      - '!LICENSE'
-      - '!**/CHANGELOG.md'
-      - '!**/README.md'
-      - '!**/.gitattributes'
-      - '!**/.gitignore'
+    paths-ignore:
+      - '.github/**'
+      - '.vscode/**'
+      - 'LICENSE'
+      - '**/CHANGELOG.md'
+      - '**/README.md'
+      - '**/.gitattributes'
+      - '**/.gitignore'
+      - '!.github/workflows/main.yml'
 
 env:
   NODE_VERSION: '16'
