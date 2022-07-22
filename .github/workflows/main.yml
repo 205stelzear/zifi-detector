@@ -3,9 +3,15 @@ name: CI - Client
 on:
   push:
     paths:
-      - 'client/**'
-      - 'package.json'
+      - '**'
       - '.github/workflows/main-client.yml'
+      - '!.github/**'
+      - '!.vscode/**'
+      - '!LICENSE'
+      - '!**/CHANGELOG.md'
+      - '!**/README.md'
+      - '!**/.gitattributes'
+      - '!**/.gitignore'
 
 env:
   NODE_VERSION: '16'
