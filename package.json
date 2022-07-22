@@ -12,7 +12,10 @@
     "dev": "vite --port 5000",
     "build": "vite build",
     "preview": "vite preview --port 5000",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "npm-run-all -p lint:*",
+    "lint:src": "eslint \"src/**/*.{t,j}s\"",
+    "lint:css": "stylelint \"src/**/*.{css,svelte,html}\""
   },
   "prettier": "@v-ed/prettier-config",
   "eslintConfig": {
@@ -32,6 +35,9 @@
     "@v-ed/prettier-config": "0.1.1",
     "@v-ed/stylelint-config": "0.2.3",
     "@v-ed/tsconfig": "0.2.0",
+    "eslint": "8.20.0",
+    "npm-run-all": "4.1.5",
+    "stylelint": "14.9.1",
     "svelte": "3.49.0",
     "svelte-check": "2.8.0",
     "svelte-preprocess": "4.10.7",
