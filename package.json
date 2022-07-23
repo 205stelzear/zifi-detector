@@ -26,7 +26,8 @@
   "stylelint": {
     "extends": [
       "@v-ed/stylelint-config"
-    ]
+    ],
+    "ignoreFiles": ["**/*.svelte"]
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "1.0.1",

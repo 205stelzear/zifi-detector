@@ -35,11 +35,7 @@
 			<div
 				class="wifi-logo"
 				class:active={isActive}
-				style="
-				--ring-scale: {ringScale};
-				--ring-speed: {ringSpeed}ms;
-				--ring-thickness: {ringThickness}%;
-			"
+				style="--ring-scale: {ringScale}; --ring-speed: {ringSpeed}ms; --ring-thickness: {ringThickness}%;"
 			/>
 		</div>
 
