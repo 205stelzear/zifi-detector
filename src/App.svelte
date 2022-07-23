@@ -25,6 +25,13 @@
 	function notifyAudio() {
 		return audio.play();
 	}
+
+	function handleLeftControl() {
+		console.log('pls Left');
+	}
+	function handleRightControl() {
+		console.log('pls Right');
+	}
 </script>
 
 <main>
@@ -44,3 +51,8 @@
 		</div>
 	</div>
 </main>
+
+<div class="controls">
+	<div class="left" on:click={(e) => handleLeftControl()} />
+	<div class="right" on:click={(e) => handleRightControl()} />
+</div>

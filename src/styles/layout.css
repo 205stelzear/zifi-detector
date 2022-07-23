@@ -74,3 +74,17 @@ div.content {
 		filter: none;
 	}
 }
+
+div.controls {
+	position: absolute;
+	left: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 94%;
+	display: flex;
+}
+
+div.controls * {
+	min-width: 50%;
+	min-height: 100%;
+}
