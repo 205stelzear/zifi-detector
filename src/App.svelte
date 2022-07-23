@@ -3,15 +3,27 @@
 
 	let isActive = false;
 
+	let ringScale = 1.2;
+	let ringSpeed = 4000;
+	let ringThickness = 70;
+
 	// let secondsBeforeNotMoreIndicator = 20;
 	let secondsBeforeNotMoreIndicator = 5;
 
-	function handleTimerEnd() {
+	async function handleTimerEnd() {
 		isActive = true;
+
+		// notifyAudio();
 
 		setTimeout(() => {
 			isActive = false;
 		}, secondsBeforeNotMoreIndicator * 1000);
+	}
+
+	const audio = new Audio('./beeps.ogg');
+
+	function notifyAudio() {
+		return audio.play();
 	}
 </script>
 
@@ -20,7 +32,15 @@
 
 	<div class="content">
 		<div>
-			<img id="wifi-logo" class:active={isActive} src="./wifi.svg" alt="ZiFi Logo" />
+			<div
+				class="wifi-logo"
+				class:active={isActive}
+				style="
+				--ring-scale: {ringScale};
+				--ring-speed: {ringSpeed}ms;
+				--ring-thickness: {ringThickness}%;
+			"
+			/>
 		</div>
 
 		<div>

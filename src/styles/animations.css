@@ -1,0 +1,37 @@
+/* stylelint-disable color-function-notation */
+
+.wifi-logo::before,
+.wifi-logo::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* .wifi-logo.active::after { */
+
+.wifi-logo::after {
+	--scale: var(--ring-scale, 2.2);
+	--speed: var(--ring-speed, 2000ms);
+	--thickness: var(--ring-thickness, 10%);
+
+	border-radius: 50%;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 7.5%) calc(100% - var(--thickness)), black 51.5%);
+	filter: blur(8px);
+	opacity: 0.33;
+	animation: pulse var(--speed) infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	}
+	95% {
+		transform: scale(var(--scale));
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
