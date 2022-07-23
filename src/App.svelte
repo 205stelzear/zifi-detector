@@ -3,6 +3,7 @@
 
 	let isActive = false;
 
+	// let secondsBeforeNotMoreIndicator = 20;
 	let secondsBeforeNotMoreIndicator = 5;
 
 	function handleTimerEnd() {

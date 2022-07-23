@@ -6,6 +6,10 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 export default defineConfig({
 	base: '',
 
+	build: {
+		minify: false,
+	},
+
 	plugins: [
 		svelte({
 			experimental: { generateMissingPreprocessorSourcemaps: true },
