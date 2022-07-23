@@ -2,10 +2,12 @@
 	import Timer from './lib/Timer.svelte';
 
 	let isActive = false;
-
-	let ringScale = 1.2;
-	let ringSpeed = 4000;
-	let ringThickness = 70;
+	
+	let curr = 4;
+	
+	const ringScaleArr = [1, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 2.2, 2.2];
+	const ringSpeedArr = [4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 2000, 2000, 1700];
+	const ringThicknessArr = [35, 40, 40, 45, 50, 50, 50, 55, 55, 60, 60, 65, 70, 70, 80];
 
 	// let secondsBeforeNotMoreIndicator = 20;
 	let secondsBeforeNotMoreIndicator = 5;
@@ -27,10 +29,10 @@
 	}
 
 	function handleLeftControl() {
-		console.log('pls Left');
+		curr = Math.max(curr - 1, 0);
 	}
 	function handleRightControl() {
-		console.log('pls Right');
+		curr = Math.min(curr + 1, 14);
 	}
 </script>
 
@@ -42,7 +44,7 @@
 			<div
 				class="wifi-logo"
 				class:active={isActive}
-				style="--ring-scale: {ringScale}; --ring-speed: {ringSpeed}ms; --ring-thickness: {ringThickness}%;"
+				style="--ring-scale: {ringScaleArr[curr]}; --ring-speed: {ringSpeedArr[curr]}ms; --ring-thickness: {ringThicknessArr[curr]}%;"
 			/>
 		</div>
 
