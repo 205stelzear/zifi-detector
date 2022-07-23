@@ -17,22 +17,20 @@
 body {
 	margin: 0;
 	display: flex;
-	min-width: 320px;
 	min-height: 100vh;
 }
 
 #app {
-	max-width: 1280px;
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
+	display: flex;
 }
 
 main {
-	height: 100%;
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 h1 {
@@ -45,9 +43,10 @@ div.content {
 	align-items: center;
 	gap: 10em;
 	min-height: 40vh;
+	flex-grow: 1;
 }
 
-img {
+#wifi-logo {
 	height: 20em;
 }
 
@@ -59,7 +58,7 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-	img {
+	#wifi-logo {
 		/* svg on an img tag */
 		/* stylelint-disable-next-line property-no-vendor-prefix */
 		-webkit-filter: invert(1); /* safari 6.0 - 9.0 */

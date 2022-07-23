@@ -20,13 +20,11 @@
 
 	<div class="content">
 		<div>
-			<img id="wifi-logo" class:active={isActive} src="./wifi.svg" alt="Vite Logo" />
+			<img id="wifi-logo" class:active={isActive} src="./wifi.svg" alt="ZiFi Logo" />
 		</div>
 
 		<div>
 			<Timer on:end={() => handleTimerEnd()} />
 		</div>
 	</div>
-
-	<div />
 </main>
