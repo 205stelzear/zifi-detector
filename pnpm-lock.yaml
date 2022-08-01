@@ -15,11 +15,11 @@ specifiers:
   svelte-preprocess: 4.10.7
   tslib: 2.4.0
   typescript: 4.7.4
-  vite: 3.0.2
+  vite: 3.0.4
   vite-plugin-singlefile: 0.11.0
 
 devDependencies:
-  '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.2
+  '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.4
   '@tsconfig/svelte': 3.0.0
   '@v-ed/eslint-config': 0.1.3_he2ccbldppg44uulnyq4rwocfa
   '@v-ed/prettier-config': 0.1.2
@@ -33,8 +33,8 @@ devDependencies:
   svelte-preprocess: 4.10.7_uslzfc62di2n2otc2tvfklnwji
   tslib: 2.4.0
   typescript: 4.7.4
-  vite: 3.0.2
-  vite-plugin-singlefile: 0.11.0_vite@3.0.2
+  vite: 3.0.4
+  vite-plugin-singlefile: 0.11.0_vite@3.0.4
 
 packages:
 
@@ -147,7 +147,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0+vite@3.0.2:
+  /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0+vite@3.0.4:
     resolution: {integrity: sha512-PorCgUounn0VXcpeJu+hOweZODKmGuLHsLomwqSj+p26IwjjGffmYQfVHtiTWq+NqaUuuHWWG7vPge6UFw4Aeg==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
@@ -165,7 +165,7 @@ packages:
       magic-string: 0.26.2
       svelte: 3.49.0
       svelte-hmr: 0.14.12_svelte@3.49.0
-      vite: 3.0.2
+      vite: 3.0.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2639,17 +2639,17 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-singlefile/0.11.0_vite@3.0.2:
+  /vite-plugin-singlefile/0.11.0_vite@3.0.4:
     resolution: {integrity: sha512-NLGe8SJ/SrnUVP6sTnvg4RBaobmcmqYusNhK3la8Bux0WA8IV9ebUkSNIcWLhVdjgAtQiCx1gSiZsS3Xd9+mjw==}
     peerDependencies:
       vite: ^2.9.13 || ^3.0.0
     dependencies:
       micromatch: 4.0.5
-      vite: 3.0.2
+      vite: 3.0.4
     dev: true
 
-  /vite/3.0.2:
-    resolution: {integrity: sha512-TAqydxW/w0U5AoL5AsD9DApTvGb2iNbGs3sN4u2VdT1GFkQVUfgUldt+t08TZgi23uIauh1TUOQJALduo9GXqw==}
+  /vite/3.0.4:
+    resolution: {integrity: sha512-NU304nqnBeOx2MkQnskBQxVsa0pRAH5FphokTGmyy8M3oxbvw7qAXts2GORxs+h/2vKsD+osMhZ7An6yK6F1dA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
