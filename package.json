@@ -1,7 +1,7 @@
 {
   "name": "zifi-detector",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "author": "Guillaume Marcoux",
   "license": "MIT",
@@ -27,7 +27,9 @@
     "extends": [
       "@v-ed/stylelint-config"
     ],
-    "ignoreFiles": ["**/*.svelte"]
+    "ignoreFiles": [
+      "**/*.svelte"
+    ]
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "1.0.1",
