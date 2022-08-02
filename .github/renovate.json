@@ -1,3 +1,4 @@
 {
-	"extends": ["github>V-ed/renovate-config"]
+	"extends": ["github>V-ed/renovate-config"],
+	"enabled": false
 }
