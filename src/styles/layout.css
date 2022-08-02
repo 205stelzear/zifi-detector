@@ -14,6 +14,11 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+html,
+body {
+	overflow: hidden;
+}
+
 body {
 	margin: 0;
 	display: flex;
@@ -22,7 +27,7 @@ body {
 
 #app {
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 0 2rem;
 	text-align: center;
 	display: flex;
 }
@@ -87,4 +92,21 @@ div.controls {
 div.controls * {
 	min-width: 50%;
 	min-height: 100%;
+}
+
+div.indicator {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 2em;
+	font-size: 2em;
+}
+
+div.indicator-zone {
+	position: absolute;
+	left: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 30%;
+	display: flex;
 }

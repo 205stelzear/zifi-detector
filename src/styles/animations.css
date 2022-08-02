@@ -10,9 +10,7 @@
 	right: 0;
 }
 
-/* .wifi-logo.active::after { */
-
-.wifi-logo::after {
+.wifi-logo.pulsing::after {
 	--scale: var(--ring-scale, 2.2);
 	--speed: var(--ring-speed, 2000ms);
 	--thickness: var(--ring-thickness, 10%);

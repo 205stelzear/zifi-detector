@@ -2,8 +2,8 @@
 	import { createEventDispatcher, onMount } from 'svelte';
 	import { formatNumberToTime } from '../utils/time';
 
-	// export let defaultTimer: number = 3 * 60;
-	export let defaultTimer: number = 10;
+	export let defaultTimer: number = 2.5 * 60;
+	// export let defaultTimer: number = 10;
 
 	const dispatch = createEventDispatcher();
 
