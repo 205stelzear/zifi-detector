@@ -72,7 +72,7 @@
 		curr = Math.max(curr - 1, 0);
 	}
 	function handleRightControl() {
-		curr = Math.min(curr + 1, 14);
+		curr = Math.min(curr + 1, rings.length - 1);
 	}
 </script>
 
